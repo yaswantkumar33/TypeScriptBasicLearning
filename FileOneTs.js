@@ -12,4 +12,13 @@ const concadinationValues = (a, b) => {
     return a + b;
 };
 console.log(concadinationValues("hii", "Everyone!"));
+// handling objects in typescript
+// inline object typing 
+const user = {
+    age: 23,
+    name: "yaswant",
+};
+console.log(user);
+user.age = 25;
+console.log("after reassingin", user);
 //# sourceMappingURL=FileOneTs.js.map
