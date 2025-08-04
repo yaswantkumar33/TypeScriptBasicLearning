@@ -121,6 +121,4 @@ As you continue learning TypeScript, explore these advanced topics:
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [TypeScript Playground](https://www.typescriptlang.org/play) - Online editor for testing
 
----
 
-*This repository contains basic TypeScript examples for learning fundamental concepts. Feel free to experiment and modify the code!*
