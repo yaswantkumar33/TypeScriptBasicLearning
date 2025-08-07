@@ -223,7 +223,6 @@ const idprint2 = (id:Idtype)=>{
 idprint2("23456");
 idprint([1,2,3,4,5,6,7,8,9]);
 
-
 // other ways we can use this is 
 // intersection
 interface UserPersonaldetails{
