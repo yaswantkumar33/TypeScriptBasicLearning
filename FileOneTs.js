@@ -187,4 +187,53 @@ const userverfun = (user) => {
     console.log("Name" + user.name + "and his ID: " + user.id);
 };
 userverfun({ name: "stark", id: 2345, email: "user@email.com" });
+// An enum is a special "class" that represents a group of constants (unchangeable variables).
+// Enums come in two flavors string and numeric. Lets start with numeric.
+var CardinalDirections;
+(function (CardinalDirections) {
+    CardinalDirections["North"] = "this is North Direction";
+    CardinalDirections["East"] = "This is East direction";
+    CardinalDirections["South"] = "this is south direction";
+    CardinalDirections["West"] = "this is west direction";
+})(CardinalDirections || (CardinalDirections = {}));
+const printdirection = (direction) => {
+    if (direction == CardinalDirections.North) {
+        console.log(CardinalDirections.North);
+    }
+    else if (direction == CardinalDirections.South) {
+        console.log(CardinalDirections.South);
+    }
+    else if (direction == CardinalDirections.West) {
+        console.log(CardinalDirections.West);
+    }
+    else if (direction == CardinalDirections.East) {
+        console.log(CardinalDirections.East);
+    }
+    else {
+        console.log("No direction is avaliable");
+    }
+}; // Error: "North" is not assignable to type 'CardinalDirections'.
+printdirection(CardinalDirections.North);
+// other examples for enum might br error handeling 
+var usererrors;
+(function (usererrors) {
+    usererrors["noUser"] = "UserNot Found";
+    usererrors["netWorkIssue"] = "Client Network issue";
+    usererrors["Unauthorized"] = "User is Unauthhorized";
+})(usererrors || (usererrors = {}));
+const printerror = (errormsg) => {
+    if (errormsg == usererrors.noUser) {
+        console.log("User Not found");
+    }
+    else if (errormsg == usererrors.netWorkIssue) {
+        console.log("User Not found");
+    }
+    else if (errormsg == usererrors.Unauthorized) {
+        console.log("User Not found");
+    }
+    else {
+        console.log("Internal Server Error");
+    }
+};
+printerror(usererrors.noUser);
 //# sourceMappingURL=FileOneTs.js.map
